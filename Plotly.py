@@ -4,9 +4,9 @@
 import pandas as pd
 
 
-ds = pd.read_csv("C:\gayatri\Datasets\cit-Patents_deg.csv",header=None)
+ds = pd.read_csv("C:\Datasets\cit-Patents_deg.csv",header=None) #mention path of your dataset in first argument
 
-
+#columns are renamed as they are null in the given dataset
 ds.rename(columns={0:'col1'},inplace = True)
 ds.rename(columns={1:'col2'},inplace = True)
 
